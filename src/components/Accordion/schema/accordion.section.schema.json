@@ -1,0 +1,35 @@
+{
+  "id": "/AccordionSection",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "color": { "type": "string" },
+    "sectionColor": { "type": "string" },
+    "background": { "type": "string" },
+    "columns": { "type": "number" },
+    "fullWidth": { "type": "boolean" },
+    "expandable": { "type": "boolean" },
+    "content": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "urls": {
+          "type": "object",
+          "properties": {
+            "main": { "type": "string" },
+            "readMore": { "type": "string" },
+            "readCaseStudy": { "type": "string" }
+          }
+        },
+        "variant": { "type": "string" }
+      }
+    },
+    "sections": { "type": "array", "items": { "$ref": "/AccordionSection" } }
+  }
+}

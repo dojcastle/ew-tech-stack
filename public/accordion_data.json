@@ -1,0 +1,483 @@
+[
+  {
+    "title": "Applications",
+    "open": true,
+    "content": [
+      {
+        "title": "DER Management",
+        "color": "#229AAA",
+        "background": "#e8f5f6",
+        "sectionColor": "#b7eaf1",
+        "columns": 2,
+        "open": true,
+        "expandable": true,
+        "sections": [
+          {
+            "title": "AEMO",
+            "subtitle": "Project EDGE",
+            "content": {
+              "title": "Project EDGE",
+              "body": "Project EDGE is a distributed energy resource marketplace in Eastern Australia where grid operators across the transmission and distribution interface can exchange grid services, such as requesting and buying the solar electricity stored in batteries of thousands of households across Australia to balance the grid.",
+              "urls": {
+                "sources": [
+                  "microsite: https://www.energyweb.org/aemo/",
+
+                  "announcement : https://www.medium.com/energy-web-insights/aemo-announces-open-source-operating-system[…]orld-leading-distributed-energy-marketplace-design-a211a6f6c415",
+
+                  "independent analysis: https://www.canarymedia.com/articles/solar/how-blockchain-could-help-integrate-rooftop-solar-and-evs-into-the-grid",
+
+                  "article: https://www.medium.com/energy-web-insights/canary-in-the-sunshine-australia-is-showing-the-rest-of-the-world-what-a-modern-grid-looks-like-ce95832cc017"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "CAISO",
+            "subtitle": "FlexAlerts",
+            "content": {
+              "title": "FlexAlerts",
+              "body": "Energy Web worked with CAISO (a major U.S. transmission grid operator) to enhance its existing Flex Alert program. With the new system, the public in California can subscribe to receive SMS or email alerts whenever the power grid faces a critical need for conservation. Subscribers can then respond when they intend to conserve, allowing CAISO to forecast the level of conservation—all while preserving the privacy of those subscribers.",
+              "urls": {
+                "sources": [
+                  "launch announcement: https://www.medium.com/energy-web-insights/california-grid-operator-launches-new-demand-flexibility-platform-enhancements-to-flex-alert-system-e01ae8030da0"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "APG",
+            "subtitle": "FlexHub",
+            "content": {
+              "title": "FlexHub",
+              "body": "This proof of concept established that a decentralized platform can allow customer-sited energy assets (e.g., battery storage systems) to offer their flexibility into a frequency market, be activated when called on, deliver flexibility when activated, and be compensated for any flexibility provided.",
+              "urls": {
+                "sources": [
+                  "launch announcement: https://www.medium.com/energy-web-insights/austrian-power-grid-and-energy-web-foundation-launch-proof-of-concept-to-use-distributed-energy-d9a378f5f5ee"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "Electra Caldense",
+            "subtitle": "ElectraFlex",
+            "content": {
+              "title": "ElectraFlex",
+              "body": "The ElectraFlex project is focusing on the deployment of a digital platform that will allow Electra Caldense to utilize the flexible capacity of assets connected to their electricity network. ElectraFlex is the world’s first decentralized flexibility platform tailored for the specific needs of a distribution system operator (DSO). The multi-faceted flexibility platform is using Energy Web’s EW-DOS technology stack to assign digital identities to all connected assets and flexibility market participants, allowing them to self-register in energy markets, and offer services to Electra Caldense as well as the Spanish transmission system operator (REE) on behalf of their owners.",
+              "urls": {
+                "sources": [
+                  "announcement: https://www.medium.com/energy-web-insights/catalonian-grid-operator-electra-caldense-energy-web-and-bamboo-energy-announce-grid-flexibility-51c75e5bcc25"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "Fluvius + Bebat",
+            "subtitle": "EasyBat",
+            "content": {
+              "title": "EasyBat",
+              "body": "EasyBat is an open-source solution for decentralized lifecycle battery asset management. The solution is built on the Energy Web Decentralized Operating System (EW-DOS) open-source technology stack and focuses on the entire battery lifecycle. Original equipment manufacturers (OEMs), distributors, installers, and accredited inspection and certification organizations issue and verify every relevant asset transaction. The fact that all these entities work together on a shared decentralized ecosystem is an important and never-seen-before innovation. Partners involve Bebat, the Belgian battery compliance scheme and Fluvius, the electricity and natural gas distribution system operator (DSO) for the Flemish Region of Belgium.",
+              "urls": {
+                "sources": [
+                  "EasyBat prototype: https://www.energyweb.org/technology/applications/ew-switchboard/easybat/",
+
+                  "launch announcement: https://www.medium.com/energy-web-insights/bebat-launches-easybat-an-open-source-decentralized-solution-for-battery-lifecycle-management-281f2ace61e9"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "DENA",
+            "subtitle": "Identity registry",
+            "content": {
+              "title": "Identity registry",
+              "body": "Germany’s federal energy agency, Deutsche Energie-Agentur (DENA), has selected Energy Web to design and construct a digital registry for distributed energy resources (DERs) across the country in partnership with more than 20 industry players. The project will enable energy assets in Germany, such as thermostats, solar PV systems, batteries, and electric vehicle charging stations to undertake automatic registration with a decentralized ledger of identities, allowing their utilisation by the German grid for a range of services such as virtual power plants and frequency regulation.",
+              "urls": {
+                "sources": [
+                  "announcement: https://www.medium.com/energy-web-insights/dena-selects-energy-web-to-build-prototype-identity-registry-for-germanys-energy-market-2580f53b2d20"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "FlexRunner IOT Firmware",
+            "content": {
+              "title": "FlexRunner IOT Firmware",
+              "body": "FlexRunner IOT Firmware Explainer",
+              "urls": {
+                "sources": ["link: https://"],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "title": "E-Mobility",
+        "color": "#0BA740",
+        "background": "#e6f6ec",
+        "sectionColor": "#58F48D",
+        "expandable": true,
+        "open": true,
+        "sections": [
+          {
+            "title": "Elia",
+            "subtitle": "E-Mobility Dashboard",
+            "content": {
+              "title": "E-Mobility Dashboard",
+              "body": "An open platform to simplify identifying electric vehicles and charge points, through digital identities on the Energy Web Chain, which enables all parties to get trustworthy, live and historic data from devices, improving green electricity purchasing and enabling the emergence of other energy services and opportunities for owners and energy companies",
+              "urls": {
+                "sources": [
+                  "partnership announcement: https://www.medium.com/energy-web-insights/elia-group-and-energy-web-launch-multi-year-strategic-partnership-be2c5d87395f"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "VW",
+            "subtitle": "Smart Green Charging",
+            "content": {
+              "title": "Smart Green Charging",
+              "body": "a partnership to investigate digitalization and integration of electric vehicles (EVs) and charging infrastructure in support of advanced electric vehicle charging programs and markets globally.\nImagine every vehicle can participate in clean electricity markets around the globe and receive energy from local and trustworthy sources. In order to make this vision a reality Energy Webs green charging solution brings energy and e-mobility companies together to offer reliable and verifiable green charging anywhere in world.",
+              "urls": {
+                "sources": [
+                  "announcement: https://www.medium.com/energy-web-insights/energy-web-and-volkswagen-jointly-investigate-the-potential-of-blockchains-for-energy-market-97e6bd687fee"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "OCN",
+            "content": {
+              "title": "OCN",
+              "body": "Share&Charge’s OCN is a decentralized e-roaming solution for seamless electric vehicle (EV) charging across different charge point networks. Since March 2020, the OCN has migrated onto the EnergyWeb Chain and is now a fully decentralized Applications on the EW network.",
+              "urls": {
+                "sources": [
+                  "announcement: https://www.medium.com/energy-web-insights/share-charge-foundation-launches-open-charging-network-on-energy-web-chain-84af7f6f5b3c"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "title": "Traceability",
+        "color": "#E4A001",
+        "background": "#fcf5e5",
+        "sectionColor": "#FEC43D",
+        "open": true,
+        "expandable": true,
+        "sections": [
+          {
+            "title": "",
+            "subtitle": "Zero",
+            "content": {
+              "title": "Zero",
+              "body": "Zero will be a global search engine for renewable energy certificates and other decarbonization products, that are tokenized on the EW Chain. The goal is to simplify procurement processes, increase transparency about available options, and accelerate decarbonization by matching buyers and sellers across the globe.",
+              "urls": {
+                "sources": [
+                  "Zero for Filecoin and Crypto Miners: https://www.medium.com/energy-web-insights/protocol-labs-and-energy-web-complete-first-showcase-of-an-open-source-solution-to-decarbonize-1a8c22ac02f5",
+
+                  "announcement: https://www.medium.com/energy-web-insights/energy-web-awarded-good-energies-foundation-grant-for-new-global-renewables-marketplace-794eaa7e14e0"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "Origin",
+            "content": {
+              "title": "Origin",
+              "body": "Origin is a production-ready digital marketplace for renewable energy certificates.\n\nEW Deployed several instances of Origin for different partners in different geographies, among which:\n- PTT in Thailand\n- Foton in Turkey\n- PJM in 14 US States\n- NV Energy in Nevada, USA\n\n- PTT and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Thailand/APAC in line with the I-REC Standard. The marketplace, ReAcc, is starting off with the I-REC certificates but has other products on the roadmap such as digitizing PPAs and green EV charging. \n\n- PJM and EW cooperated in a year-long partnership to test blockchain-based tools (including the Origin SDK) for creating a digital marketplace for voluntary RECs. Several buyers and sellers of RECs tested the marketplace, which was integrated with the PJM GATS (Generation Attribute Tracking System) registry. \n\n- Foton and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Turkey in line with the I-REC Standard. The marketplace is up and running and accessible to renewable energy buyers and sellers.\n\n- EW, Blockchains LLC and the Public Utility Commission (PUC) of Nevada cooperated in testing blockchain-based technologies, including the Origin SDK and its issuer module, for creating a modern tracking system for Nevada's renewable energy certificates (\"PECs\").",
+              "urls": {
+                "sources": [
+                  "PTT announcement: https://www.energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/",
+
+                  "PJM announcement: https://www.medium.com/energy-web-insights/pjm-eis-update-modernizing-a-legacy-u-s-rec-tracking-system-with-blockchain-based-technology-db0ad5a4f924",
+
+                  "PJM EIS press release: https://insidelines.pjm.com/pjm-eis-completes-blockchain-pilot-with-energy-web-foundation",
+
+                  "Foton announcement: https://www.medium.com/energy-web-insights/foton-and-energy-web-launch-blockchain-based-i-rec-marketplace-in-turkey-e2847db835f",
+
+                  "NV Energy announcement: https://www.medium.com/energy-web-insights/nv-energy-blockchains-llc-and-energy-web-announce-blockchain-pilot-for-nevadas-residential-bbf4571179da"
+                ],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "24/7",
+            "content": {
+              "title": "24/7",
+              "body": "24/7 Explainer",
+              "urls": {
+                "sources": ["coming soon: "],
+                "readCaseStudy": "https://www.energyweb.org/micro-narratives/"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "title": "DeFi",
+        "color": "#DE0862",
+        "background": "#fce6ef",
+        "sectionColor": "#F9559A",
+        "open": true,
+        "expandable": true,
+        "sections": [
+          {
+            "title": "ENGIE",
+            "subtitle": "DeFi 4 Energy Access",
+            "content": {
+              "title": "DeFi 4 Energy Access",
+              "body": "ENGIE Energy Access — one of the leading off-grid, Pay-As-You-Go (PAYG) solar and mini-grid solutions providers in Africa, has partnered with Energy Web to accelerate energy access in sub-Saharan Africa through a decentralized finance (DeFi) crowdfunding platform. The DeFi application will be built on the open-source Energy Web tech stack and enable investors to provide microloans that support clean energy deployment",
+              "urls": {
+                "sources": [
+                  "project page: https://lab.energyweb.org/engie-energy-access/",
+                  "project announcement: https://www.medium.com/energy-web-insights/engie-energy-access-and-energy-web-announce-defi-crowdfunding-platform-to-help-scale-solar-mini-2142029ad84f#:~:text=Energy%20Web%20is%20a%20global,participate%20in%20any%20energy%20market."
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Infrastructure",
+    "open": true,
+    "content": [
+      {
+        "title": "Identity Solutions",
+        "color": "#006CF0",
+        "sectionColor": "#006CF0",
+        "open": true,
+        "fullWidth": true,
+        "columns": 3,
+        "expandable": true,
+        "sections": [
+          {
+            "title": "",
+            "subtitle": "Switchboard",
+            "content": {
+              "title": "Switchboard",
+              "body": "Switchboard is the identity and access management (IAM) interface for the Energy Web ecosystem. Its purpose is similar to centralized IAM services offered by Amazon or Google in that it allows you to define what users can do within and organization or an application.",
+              "urls": {
+                "sources": [
+                  "Read more: io/energy-web/technology/the-stack/application-layer/identity-management-applications#switchboard"
+                ]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "DIDs",
+            "content": {
+              "title": "DIDs",
+              "body": "A DID is a digital, verifiable identity that is user-generated and not coupled to any centralized institution. It can be used to identify any subject, such as an asset (all DERs - Distributed Energy Resources - such as solar panels, batteries, electric vehicles, smart appliances etc), a person, or an organization.",
+              "urls": {
+                "sources": [
+                  "Read more: https://energy-web-foundation.gitbook.io/energy-web/foundational-concepts/self-sovereign-identity#decentralized-identifiers-dids"
+                ]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "IAM Client Lib",
+            "content": {
+              "title": "IAM Client Lib",
+              "body": "A  TypeScript  library that provides high-level functions related to the identity and access management (IAM) for all users, assets, organizations and applications that are anchored on the Energy Web Chain",
+              "urls": {
+                "sources": [
+                  "Read more: https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/utility-layer-1#identity-access-and-management-iam-client-library"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "title": "Utility Layer",
+        "color": "#7907FE",
+        "sectionColor": "#A466FF",
+        "open": true,
+        "columns": 4,
+        "fullWidth": true,
+        "expandable": true,
+        "sections": [
+          {
+            "title": "",
+            "subtitle": "DSB Messanging",
+            "content": {
+              "title": "DSB Messanging",
+              "body": "DSB Messanging Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "Cache Server for Blockchain data",
+            "content": {
+              "title": "Cache Server for Blockchain data",
+              "body": "Cache Server for Blockchain data Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "Staking",
+            "content": {
+              "title": "Staking",
+              "body": "Staking Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "Watchtower",
+            "content": {
+              "title": "Watchtower",
+              "body": "Watchtower Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "EWNS Name Service",
+            "content": {
+              "title": "EWNS Name Service",
+              "body": "EWNS Name Service Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "EKC- Enterprise Key Connect",
+            "content": {
+              "title": "EKC- Enterprise Key Connect",
+              "body": "EKC- Enterprise Key Connect Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "ETH<>EWC Bridge",
+            "content": {
+              "title": "ETH<>EWC Bridge",
+              "body": "ETH<>EWC Bridge Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Trust Layer",
+    "open": true,
+    "content": [
+      {
+        "title": "Energy Web Chain & Tools",
+        "color": "#FFFFFF",
+        "sectionColor": "#A466FF",
+        "background": "#d2b3ff",
+        "columns": 4,
+        "expandable": false,
+        "sections": [
+          {
+            "title": "",
+            "subtitle": "Energy Web Chain",
+            "background": "#A466FF",
+            "color": "#FFFFFF",
+            "selected": {
+              "color": "#A466FF"
+            },
+            "content": {
+              "title": "Energy Web Chain",
+              "body": "Energy Web Chain Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "EWT",
+            "color": "#ffffff",
+            "background": "#d1b2ff",
+            "selected": {
+              "color": "#d1b2ff"
+            },
+            "content": {
+              "title": "EWT",
+              "body": "EWT Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "Validator Nodes",
+            "color": "#ffffff",
+            "background": "#d1b2ff",
+            "selected": {
+              "color": "#d1b2ff"
+            },
+            "content": {
+              "title": "Validator Nodes",
+              "body": "Validator Nodes Explainer",
+              "urls": {
+                "sources": []
+              }
+            }
+          },
+          {
+            "title": "",
+            "subtitle": "Block Explorer",
+            "color": "#ffffff",
+            "background": "#d1b2ff",
+            "selected": {
+              "color": "#d1b2ff"
+            },
+            "content": {
+              "title": "Block Explorer",
+              "body": "Block Explorer Explainer",
+              "urls": {
+                "sources": ["Read more: https://"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
