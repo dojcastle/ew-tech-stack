@@ -137,9 +137,9 @@ function App() {
                             }
                           });
 
-                          setTimeout(() => {
-                            updateDetailCardPosition(currentTarget);
-                          }, 0);
+                          // setTimeout(() => {
+                          //   updateDetailCardPosition(currentTarget);
+                          // }, 0);
                         }}
                       >
                         <h1>{section.title}</h1>
@@ -166,7 +166,7 @@ function App() {
           setData(data);
         }
       });
-    window.addEventListener("scroll", updateDetailCardPosition);
+    // window.addEventListener("scroll", updateDetailCardPosition);
     return () => {};
   }, []);
 

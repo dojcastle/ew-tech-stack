@@ -10,6 +10,14 @@
     "columns": { "type": "number" },
     "fullWidth": { "type": "boolean" },
     "expandable": { "type": "boolean" },
+    "selected": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string"
+        }
+      }
+    },
     "content": {
       "type": "object",
       "properties": {
@@ -22,8 +30,7 @@
         "urls": {
           "type": "object",
           "properties": {
-            "main": { "type": "string" },
-            "readMore": { "type": "string" },
+            "sources": { "type": "array" },
             "readCaseStudy": { "type": "string" }
           }
         },
