@@ -28,7 +28,7 @@
 
                   "article: https://medium.com/energy-web-insights/canary-in-the-sunshine-australia-is-showing-the-rest-of-the-world-what-a-modern-grid-looks-like-ce95832cc017"
                 ],
-                "readCaseStudy": "https://www.energyweb.org/aemo"
+                "readCaseStudy": "https://www.energyweb.org/case-studies/aemo/"
               }
             }
           },
@@ -126,7 +126,8 @@
               "urls": {
                 "sources": [
                   "partnership announcement: https://medium.com/energy-web-insights/elia-group-and-energy-web-launch-multi-year-strategic-partnership-be2c5d87395f"
-                ]
+                ],
+                "readCaseStudy": "https://www.energyweb.org/case-studies/e-mobility/"
               }
             }
           },
@@ -177,7 +178,8 @@
                   "Zero for Filecoin and Crypto Miners: https://medium.com/energy-web-insights/protocol-labs-and-energy-web-complete-first-showcase-of-an-open-source-solution-to-decarbonize-1a8c22ac02f5",
 
                   "announcement: https://medium.com/energy-web-insights/energy-web-awarded-good-energies-foundation-grant-for-new-global-renewables-marketplace-794eaa7e14e0"
-                ]
+                ],
+                "readCaseStudy": "https://www.energyweb.org/case-studies/aemo/"
               }
             }
           },
