@@ -10,19 +10,21 @@ interface AccordionProps {
   arrow?: boolean;
   parent?: boolean;
   style?: React.CSSProperties;
-  isOpen?: boolean;
+  open?: boolean;
   fullWidth?: boolean;
   background?: string;
   "data-section"?: string;
+  disabled?: boolean;
 }
 
 export default function Accordion(props: AccordionProps) {
   const {
     arrow = true,
     parent = false,
-    isOpen = false,
+    open = false,
     fullWidth = false,
     style = {},
+    disabled = false,
     background,
     color,
     title,
@@ -62,7 +64,7 @@ export default function Accordion(props: AccordionProps) {
         "accordion",
         parent ? "parent" : "",
         color ? "themed" : "",
-        !isOpen ? "is-closed" : "is-open",
+        !open ? "is-closed" : "is-open",
         fullWidth ? "full-width" : "",
       ]
         .join(" ")
@@ -78,9 +80,19 @@ export default function Accordion(props: AccordionProps) {
           : {}),
       }}
     >
-      <div className="title" onClick={toggleContent}>
+      <div
+        className="title"
+        onClick={disabled ? () => {} : toggleContent}
+        style={
+          disabled
+            ? {
+                cursor: "initial",
+              }
+            : {}
+        }
+      >
         <b style={{ color }}>{title}</b>
-        {arrow && <Icon icon={<ArrowIcon />} />}
+        {!disabled && arrow && <Icon icon={<ArrowIcon />} />}
       </div>
       <div className="content">{children}</div>
     </div>

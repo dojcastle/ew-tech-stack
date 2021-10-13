@@ -1,5 +1,10 @@
 {
-  "type": "array",
-  "items": { "$ref": "/AccordionSchema" },
+  "type": "object",
+  "properties": {
+    "detailCard": {
+      "$ref": "/AccordionContent"
+    },
+    "items": { "$ref": "/AccordionSchema" }
+  },
   "required": true
 }
