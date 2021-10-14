@@ -8,40 +8,65 @@ import validateSchema from "./components/Accordion/schema/utils/validateSchema";
 import DetailCard from "./components/SidebarxModal/DetailCard";
 import SidebarxModalProvider from "./components/SidebarxModal/SidebarxModalProvider";
 
-const updateDetailCardPosition = (
-  currentTarget: HTMLElement | null | Event
-) => {
-  if (window.innerWidth < 1433) {
-    return;
+declare global {
+  interface Window {
+    r: any;
+    x: any;
   }
-  const detailCard = document.querySelector("#detail-card");
-  let top;
+}
 
-  if (currentTarget instanceof HTMLElement) {
-    top =
-      currentTarget.getBoundingClientRect().top -
-      document.body.getBoundingClientRect().top;
-  }
+export function updatedSelectedItem() {
+  document.querySelectorAll(".item").forEach((el) => {
+    const element = el as HTMLElement;
+    if (!element.classList.contains("selected")) {
+      element.style.color = element.getAttribute("data-initial-color") + "";
+    }
+  });
+  document.body.style.overflow = "auto";
+}
+
+const updateDetailCardPosition = () => {
+  const detailCard = document.querySelector("#detail-card");
+  const rootDiv = window.document.querySelector("#nested-accordion");
+  const internalDiv = document.querySelector("#nested-accordion");
+  let top, bottom;
 
   if (detailCard instanceof HTMLElement) {
-    const selectedItem = document.querySelector(".item.selected");
-
     if (
-      window.scrollY &&
-      selectedItem &&
-      window.scrollY > selectedItem.getBoundingClientRect().top
+      detailCard.parentElement &&
+      window.getComputedStyle(detailCard.parentElement)["position"] === "static"
     ) {
-      top = window.scrollY + 30;
+      top = window.document.body.getBoundingClientRect().top * -1;
+
+      if (rootDiv && rootDiv?.getBoundingClientRect().top < 20) {
+        top -= top + rootDiv.getBoundingClientRect().top;
+
+        if (detailCard instanceof HTMLElement) {
+          if (internalDiv) {
+            let topOffset =
+              rootDiv.getBoundingClientRect().top +
+              window.document.documentElement.scrollTop;
+            bottom = topOffset + internalDiv.clientHeight;
+            if (
+              window.document.documentElement.scrollTop +
+                detailCard.clientHeight >
+              bottom
+            ) {
+              return;
+            }
+          }
+          detailCard.style.top = top + 20 + "px";
+        }
+      }
     } else {
-      top = selectedItem?.getBoundingClientRect().top;
+      document.body.style.overflow = "hidden";
     }
-    detailCard.style.top = top + "px";
-    detailCard.style.right = "0px";
   }
 };
 
 function App() {
   const [data, setData] = useState<AccordionType[]>();
+  const [detailCardData, setDetailCardData] = useState<AccordionContent>();
   const [current, setCurrent] = useState<AccordionContent>();
   const [error, setError] = useState<String>();
 
@@ -54,10 +79,9 @@ function App() {
     return (
       <Accordion
         key={index}
-        title={accordion.title}
         parent={true}
-        isOpen={accordion.open}
         data-section={accordion.title}
+        {...accordion}
       >
         {accordion.content &&
           accordion.content.map((subAccordion, index) =>
@@ -66,11 +90,7 @@ function App() {
               {
                 arrow: false,
                 key: index,
-                title: subAccordion.title,
-                color: subAccordion.color,
-                background: subAccordion.background,
-                isOpen: subAccordion.open,
-                fullWidth: subAccordion.fullWidth,
+                ...subAccordion,
                 style: {
                   flex: subAccordion.columns || 1,
                 },
@@ -125,21 +145,14 @@ function App() {
                             setCurrent(section.content);
                           } else {
                             currentTarget.classList.remove("selected");
-
                             setCurrent(undefined);
                           }
 
-                          document.querySelectorAll(".item").forEach((el) => {
-                            const element = el as HTMLElement;
-                            if (!element.classList.contains("selected")) {
-                              element.style.color =
-                                element.getAttribute("data-initial-color") + "";
-                            }
-                          });
+                          updatedSelectedItem();
 
-                          // setTimeout(() => {
-                          //   updateDetailCardPosition(currentTarget);
-                          // }, 0);
+                          setTimeout(() => {
+                            updateDetailCardPosition();
+                          }, 0);
                         }}
                       >
                         <h1>{section.title}</h1>
@@ -163,11 +176,14 @@ function App() {
         if (validateSchema(data).errors.length) {
           setError(validateSchema(data).errors[0].stack);
         } else {
-          setData(data);
+          setData(data.data);
+          setDetailCardData(data.detailCard);
         }
       });
-    // window.addEventListener("scroll", updateDetailCardPosition);
-    return () => {};
+    window.addEventListener("scroll", updateDetailCardPosition);
+    return () => {
+      window.removeEventListener("scrool", updateDetailCardPosition);
+    };
   }, []);
 
   return (
@@ -175,7 +191,7 @@ function App() {
       <div className="wrapper">
         {error && <b>{error}</b>}
         {data && !error && NestedAccordion(0)}
-        <DetailCard />
+        <DetailCard data={detailCardData} />
       </div>
     </SidebarxModalProvider.Provider>
   );

@@ -9,6 +9,9 @@
       "type": "string",
       "required": true
     },
+    "disabled": {
+      "type": "boolean"
+    },
     "content": {
       "type": "array",
       "items": { "$ref": "/AccordionSection" }
