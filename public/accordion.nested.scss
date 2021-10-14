@@ -9,7 +9,7 @@ $columns-break-point: 1260px;
 
 body {
   margin: 0 auto;
-  max-width: 1400px;
+  // max-width: 1400px;
 }
 
 #nested-accordion {
@@ -39,7 +39,7 @@ body {
     }
   }
   #detail-card {
-    font-family: "DW Sans", sans-serif;
+    font-family: "DW Sans", sans-serif !important;
     position: relative;
     top: 30px;
     width: 305px;
@@ -197,7 +197,7 @@ body {
     gap: 24px;
   }
   .accordion {
-    font-family: "DW Sans", sans-serif;
+    font-family: "DW Sans", sans-serif !important;
     margin: 10px;
     flex: 1;
     border-radius: 8px;
