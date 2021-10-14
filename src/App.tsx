@@ -7,6 +7,7 @@ import {
 import validateSchema from "./components/Accordion/schema/utils/validateSchema";
 import DetailCard from "./components/SidebarxModal/DetailCard";
 import SidebarxModalProvider from "./components/SidebarxModal/SidebarxModalProvider";
+const jsonData = require("./accordion_data.json");
 
 declare global {
   interface Window {
@@ -170,16 +171,12 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("/accordion_data.json")
-      .then((resp) => resp.json())
-      .then((data) => {
-        if (validateSchema(data).errors.length) {
-          setError(validateSchema(data).errors[0].stack);
-        } else {
-          setData(data.data);
-          setDetailCardData(data.detailCard);
-        }
-      });
+    if (validateSchema(jsonData).errors.length) {
+      setError(validateSchema(jsonData).errors[0].stack);
+    } else {
+      setData(jsonData.data);
+      setDetailCardData(jsonData.detailCard);
+    }
     window.addEventListener("scroll", updateDetailCardPosition);
     return () => {
       window.removeEventListener("scrool", updateDetailCardPosition);
