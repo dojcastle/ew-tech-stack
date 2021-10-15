@@ -1,14 +1,15 @@
-$first-break-point: 1250px;
+$first-break-point: 992px;
 $second-break-point: 875px;
 
 $compact-card-height: 80px;
 $opened-card-height: 60px;
 
-$detail-card-break-point: 1433px;
+$detail-card-break-point: 1015px;
+$columns-break-point: 1260px;
 
 body {
   margin: 0 auto;
-  max-width: 1400px;
+  // max-width: 1400px;
 }
 
 #nested-accordion {
@@ -25,36 +26,41 @@ body {
       background: rgba(255, 255, 255, 0.5);
       z-index: 10;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
+      max-height: 100vh;
+      padding: 10px 0;
+      overflow: auto;
       #detail-card {
         width: 80% !important;
+        margin: auto 0;
+        top: 0 !important;
       }
     }
   }
   #detail-card {
-    font-family: "DW Sans", sans-serif;
+    font-family: "DW Sans", sans-serif !important;
     position: relative;
     top: 30px;
     width: 305px;
     min-width: 305px;
-    animation: slideLeft 0.26s ease-out 1;
+    // animation: slideLeft 0.26s ease-out 1;
     background: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
-    @media screen and (max-width: $detail-card-break-point) {
-      top: 0 !important;
+    @media screen and (min-width: $detail-card-break-point) {
+      right: 14px;
     }
     &:not(.has-case-study) {
       padding-bottom: 24px;
     }
     h1,
-    p {
+    .body {
       padding: 0 24px;
       padding-bottom: 24px;
     }
-    p {
+    .body {
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -62,6 +68,8 @@ body {
       color: #2b2b2b;
       max-height: 30vh;
       overflow: auto;
+      margin-bottom: 24px;
+      padding-bottom: 0;
     }
     h1 {
       font-style: normal;
@@ -72,9 +80,28 @@ body {
       border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       padding-bottom: 24px !important;
       padding-top: 24px !important;
+      .close-btn {
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
+        background: #f8f9fa;
+        color: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+      }
+      @media screen and (min-width: $detail-card-break-point) {
+        & > .close-btn {
+          display: none;
+        }
+      }
     }
     .urls a,
     .read-case-study {
+      text-transform: capitalize;
       &::before {
         content: "";
         width: 10px;
@@ -149,6 +176,7 @@ body {
       &:hover {
         color: #ffffff;
         background: #a466ff url("/svg/dots-hover.svg") no-repeat bottom center;
+        background-size: cover;
         &::before {
           background: url("/svg/icon-arrow-hover.svg") no-repeat center;
         }
@@ -169,7 +197,7 @@ body {
     gap: 24px;
   }
   .accordion {
-    font-family: "DW Sans", sans-serif;
+    font-family: "DW Sans", sans-serif !important;
     margin: 10px;
     flex: 1;
     border-radius: 8px;
@@ -319,6 +347,16 @@ body {
       &:not(.filler).selected {
         box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
         background: #fff !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $columns-break-point) and (min-width: $first-break-point) {
+  #nested-accordion {
+    .accordion[data-section="Applications"] {
+      .content > div[data-section="Applications"] {
+        flex: 40% !important;
       }
     }
   }

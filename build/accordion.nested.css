@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  max-width: 1400px;
+  /* max-width: 1400px; */
 }
 
 #nested-accordion * {
@@ -8,7 +8,7 @@ body {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 1433px) {
+@media screen and (max-width: 1015px) {
   #nested-accordion .detail-card-container {
     position: fixed;
     top: 0;
@@ -20,26 +20,29 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-height: 100vh;
+    padding: 10px 0;
+    overflow: auto;
   }
   #nested-accordion .detail-card-container #detail-card {
     width: 80% !important;
+    margin: auto 0;
+    top: 0 !important;
   }
 }
 
 #nested-accordion #detail-card {
-  font-family: "DW Sans", sans-serif;
+  font-family: "DW Sans", sans-serif !important;
   position: relative;
   top: 30px;
   width: 305px;
   min-width: 305px;
-  -webkit-animation: slideLeft 0.26s ease-out 1;
-          animation: slideLeft 0.26s ease-out 1;
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -47,9 +50,9 @@ body {
           box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 1433px) {
+@media screen and (min-width: 1015px) {
   #nested-accordion #detail-card {
-    top: 0 !important;
+    right: 14px;
   }
 }
 
@@ -58,12 +61,12 @@ body {
 }
 
 #nested-accordion #detail-card h1,
-#nested-accordion #detail-card p {
+#nested-accordion #detail-card .body {
   padding: 0 24px;
   padding-bottom: 24px;
 }
 
-#nested-accordion #detail-card p {
+#nested-accordion #detail-card .body {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -71,6 +74,8 @@ body {
   color: #2b2b2b;
   max-height: 30vh;
   overflow: auto;
+  margin-bottom: 24px;
+  padding-bottom: 0;
 }
 
 #nested-accordion #detail-card h1 {
@@ -82,6 +87,37 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 24px !important;
   padding-top: 24px !important;
+}
+
+#nested-accordion #detail-card h1 .close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  background: #f8f9fa;
+  color: #000000;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 1015px) {
+  #nested-accordion #detail-card h1 > .close-btn {
+    display: none;
+  }
+}
+
+#nested-accordion #detail-card .urls a,
+#nested-accordion #detail-card .read-case-study {
+  text-transform: capitalize;
 }
 
 #nested-accordion #detail-card .urls a::before,
@@ -175,6 +211,7 @@ body {
 #nested-accordion #detail-card .read-case-study:hover {
   color: #ffffff;
   background: #a466ff url("/svg/dots-hover.svg") no-repeat bottom center;
+  background-size: cover;
 }
 
 #nested-accordion #detail-card .read-case-study:hover::before {
@@ -214,7 +251,7 @@ body {
 }
 
 #nested-accordion .accordion {
-  font-family: "DW Sans", sans-serif;
+  font-family: "DW Sans", sans-serif !important;
   margin: 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -350,7 +387,7 @@ body {
   text-align: left;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   #nested-accordion .accordion:not(.parent) {
     -webkit-box-flex: 100% !important;
         -ms-flex: 100% !important;
@@ -379,7 +416,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   #nested-accordion .category-items {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
@@ -439,5 +476,13 @@ body {
   -webkit-box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
   background: #fff !important;
+}
+
+@media screen and (max-width: 1260px) and (min-width: 992px) {
+  #nested-accordion .accordion[data-section="Applications"] .content > div[data-section="Applications"] {
+    -webkit-box-flex: 40% !important;
+        -ms-flex: 40% !important;
+            flex: 40% !important;
+  }
 }
 /*# sourceMappingURL=accordion.nested.css.map */
