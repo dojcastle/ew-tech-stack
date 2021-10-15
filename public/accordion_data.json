@@ -1,7 +1,7 @@
 {
   "detailCard": {
-    "title": "Lorem Ipsum",
-    "body": "Quis adipisicing Lorem in ullamco duis. Est ea elit nulla voluptate ullamco nulla aute mollit officia fugiat reprehenderit pariatur qui. Culpa ipsum amet magna dolore eiusmod culpa consectetur nulla exercitation."
+    "title": "Details",
+    "body": "The Energy Web Decentralized Operating System (EW-DOS) has three layers that work together to enable development and deployment of decentralized applications for the energy sector and beyond. \n\n Click on any box and you’ll be able to read a short description of the project here."
   },
   "data": [
     {
@@ -15,7 +15,7 @@
           "background": "#e8f5f6",
           "sectionColor": "#b7eaf1",
           "columns": 2,
-          "open": true,
+          "open": false,
           "expandable": true,
           "sections": [
             {
@@ -121,7 +121,7 @@
           "background": "#e6f6ec",
           "sectionColor": "#58F48D",
           "expandable": true,
-          "open": true,
+          "open": false,
           "sections": [
             {
               "title": "Elia",
@@ -170,7 +170,7 @@
           "color": "#E4A001",
           "background": "#fcf5e5",
           "sectionColor": "#FEC43D",
-          "open": true,
+          "open": false,
           "expandable": true,
           "sections": [
             {
@@ -225,7 +225,7 @@
           "color": "#DE0862",
           "background": "#fce6ef",
           "sectionColor": "#F9559A",
-          "open": true,
+          "open": false,
           "expandable": true,
           "sections": [
             {
@@ -404,9 +404,11 @@
           "title": "Energy Web Chain & Tools",
           "color": "#FFFFFF",
           "sectionColor": "#A466FF",
+          "fullWidth": true,
           "background": "#d2b3ff",
           "columns": 4,
-          "expandable": false,
+          "open": false,
+          "expandable": true,
           "sections": [
             {
               "title": "",
@@ -430,9 +432,9 @@
               "title": "",
               "subtitle": "EWT",
               "color": "#ffffff",
-              "background": "#d1b2ff",
+              "background": "#A466FF",
               "selected": {
-                "color": "#d1b2ff"
+                "color": "#A466FF"
               },
               "content": {
                 "title": "EWT",
@@ -448,9 +450,9 @@
               "title": "",
               "subtitle": "Validator Nodes",
               "color": "#ffffff",
-              "background": "#d1b2ff",
+              "background": "#A466FF",
               "selected": {
-                "color": "#d1b2ff"
+                "color": "#A466FF"
               },
               "content": {
                 "title": "Validator Nodes",
@@ -466,9 +468,9 @@
               "title": "",
               "subtitle": "Block Explorer",
               "color": "#ffffff",
-              "background": "#d1b2ff",
+              "background": "#A466FF",
               "selected": {
-                "color": "#d1b2ff"
+                "color": "#A466FF"
               },
               "content": {
                 "title": "Block Explorer",
