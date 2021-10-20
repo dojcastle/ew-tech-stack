@@ -110,7 +110,7 @@
               "subtitle": "FlexRunner IOT Firmware",
               "content": {
                 "title": "FlexRunner IOT Firmware",
-                "body": "Flex Runner is a modular framework for IoT devices. The project aims at making IoT devices more maintainable, manageable and smart by using small applications, called Flex Actions on a workflow document, called Flex Workflows. These Flex Actions allow users to create automations based on the readings of their IOT submeter. To better understand the concept, you can think of Flex Runner as a “GitHub Actions running on an IoT device”"
+                "body": "Flex Runner is a modular framework for IoT devices. The project aims to make IoT devices more maintainable, manageable and smart by using small applications, called Flex Actions, assigned to workflow documents, called Flex Workflows. These Flex Actions allow users to create automations based on the readings of their IOT submeter. To better understand the concept, you can think of Flex Runner as ‘GitHub Actions running on an IoT device’"
               }
             }
           ]
@@ -128,7 +128,7 @@
               "subtitle": "E-Mobility Dashboard",
               "content": {
                 "title": "E-Mobility Dashboard",
-                "body": "An open platform to simplify identifying electric vehicles and charge points, through digital identities on the Energy Web Chain, which enables all parties to get trustworthy, live and historic data from devices, improving green electricity purchasing and enabling the emergence of other energy services and opportunities for owners and energy companies",
+                "body": "An open platform to simplify the identification of electric vehicles and charge points through digital identities anchored on the Energy Web Chain, enabling all parties to get trustworthy, live and historic data from devices, improving green electricity purchasing and enabling the emergence of other energy services and opportunities for owners and energy companies",
                 "urls": {
                   "sources": [
                     "partnership announcement: https://medium.com/energy-web-insights/elia-group-and-energy-web-launch-multi-year-strategic-partnership-be2c5d87395f"
@@ -155,7 +155,7 @@
               "subtitle": "OCN",
               "content": {
                 "title": "OCN",
-                "body": "Share&Charge’s OCN is a decentralized e-roaming solution for seamless electric vehicle (EV) charging across different charge point networks. Since March 2020, the OCN has migrated onto the EnergyWeb Chain and is now a fully decentralized Applications on the EW network.",
+                "body": "Share&Charge’s OCN is a decentralized e-roaming solution for seamless electric vehicle (EV) charging across different charge point networks. Since March 2020, the OCN has migrated onto the EnergyWeb Chain and is now a fully decentralized application on the EW network.",
                 "urls": {
                   "sources": [
                     "announcement: https://medium.com/energy-web-insights/share-charge-foundation-launches-open-charging-network-on-energy-web-chain-84af7f6f5b3c"
@@ -194,7 +194,7 @@
               "subtitle": "Origin",
               "content": {
                 "title": "Origin",
-                "body": "Origin is a production-ready digital marketplace for renewable energy certificates. \n\n EW Deployed several instances of Origin for different partners in different geographies, among which:\n\n- PTT in Thailand\n- Foton in Turkey\n- PJM in 14 US States\n- NV Energy in Nevada, USA\n\n- PTT and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Thailand/APAC in line with the I-REC Standard. The marketplace, ReAcc, is starting off with the I-REC certificates but has other products on the roadmap such as digitizing PPAs and green EV charging. \n\n- PJM and EW cooperated in a year-long partnership to test blockchain-based tools (including the Origin SDK) for creating a digital marketplace for voluntary RECs. Several buyers and sellers of RECs tested the marketplace, which was integrated with the PJM GATS (Generation Attribute Tracking System) registry. \n\n- Foton and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Turkey in line with the I-REC Standard. The marketplace is up and running and accessible to renewable energy buyers and sellers.\n\n- EW, Blockchains LLC and the Public Utility Commission (PUC) of Nevada cooperated in testing blockchain-based technologies, including the Origin SDK and its issuer module, for creating a modern tracking system for Nevada's renewable energy certificates (\"PECs\").",
+                "body": "Origin is a production-ready digital marketplace for renewable energy certificates. \n\n EW Deployed several instances of Origin for different partners in different geographies, including:\n\n- PTT in Thailand:\nPTT and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Thailand, in line with the I-REC Standard.\n\n- Foton in Turkey:\nFoton and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Turkey in line with the I-REC Standard. The marketplace is up and running and accessible to renewable energy buyers and sellers.\n\n- PJM in 14 US States:\nPJM and EW cooperated in a year-long partnership to test blockchain-based tools (including the Origin SDK) for creating a digital marketplace for voluntary RECs.\n\n- NV Energy in Nevada, USA:\nEW, Blockchains LLC and the Public Utility Commission (PUC) of Nevada cooperated in testing blockchain-based technologies, including the Origin SDK and its issuer module, for creating a modern tracking system for Nevada's renewable energy certificates (\"PECs\").",
                 "urls": {
                   "sources": [
                     "PTT announcement: https://energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/",
@@ -215,7 +215,7 @@
               "subtitle": "24/7",
               "content": {
                 "title": "24/7",
-                "body": "24/7 Explainer"
+                "body": "EW's 24/7 is an open-source software development kit (SDK) to track and match renewable electricity generation and consumption on a 24/7 level.\n This toolkit enables tracing energy consumption on a highly granular level (e.g., 30 minutes) as opposed to net/annual basis and ensuring it is covered or “matched” with clean energy sources to the fullest extent. Corporates like Google and Microsoft (i.e. those who achieved their net renewables targets and have massive electricity consumption in countries with competitive renewable energy markets) promote a 24/7 carbon-free energy strategy for several reasons. Matching energy consumption with carbon-free generation within the same granular time frame (e.g., an hour) as opposed to a year provides much more accurate information about the company’s carbon footprint from energy consumption. Based on this information, the company is able to make decisions that support their individual decarbonization, e.g., by shifting consumption to hours with highest shares of renewables in the grid. This information benefits the end-consumers as well, who receive a more detailed picture of these companies’ sustainability claims. Moreover, the demand for 24/7 clean energy motivates the supply by setting better price signals for renewable energy generation for when and where it’s needed the most.These more timely price signals should lead to better grid management and addition of new renewable energy capacity."
               }
             }
           ]
@@ -233,7 +233,7 @@
               "subtitle": "DeFi 4 Energy Access",
               "content": {
                 "title": "DeFi 4 Energy Access",
-                "body": "ENGIE Energy Access — one of the leading off-grid, Pay-As-You-Go (PAYG) solar and mini-grid solutions providers in Africa, has partnered with Energy Web to accelerate energy access in sub-Saharan Africa through a decentralized finance (DeFi) crowdfunding platform. The DeFi application will be built on the open-source Energy Web tech stack and enable investors to provide microloans that support clean energy deployment",
+                "body": "ENGIE Energy Access — one of the leading off-grid, Pay-As-You-Go (PAYG) solar and mini-grid solutions providers in Africa, has partnered with Energy Web to accelerate energy access in sub-Saharan Africa through a decentralized finance (DeFi) crowdfunding platform. The DeFi application will be built on the open-source Energy Web tech stack and enable investors to provide microloans that support clean energy deployment.",
                 "urls": {
                   "sources": [
                     "project page: https://lab.energyweb.org/engie-energy-access/",
@@ -355,7 +355,7 @@
               "subtitle": "Watchtower",
               "content": {
                 "title": "Watchtower",
-                "body": "Watchtower Explainer"
+                "body": "a Watchtower is a software actor that observes and measures the level and quality of services that are provisioned by Energy Web software-as-a-service providers and managers."
               }
             },
             {
@@ -376,7 +376,7 @@
               "subtitle": "EKC- Enterprise Key Connect",
               "content": {
                 "title": "EKC- Enterprise Key Connect",
-                "body": "EKC- Enterprise Key Connect Explainer"
+                "body": "A utility which allows enterprise employees to use established identity providers, like Azure AD, to access the key storage provided by key management systems, such as Azure Key Vault, within web3 applications."
               }
             },
             {
@@ -384,7 +384,7 @@
               "subtitle": "ETH<>EWC Bridge",
               "content": {
                 "title": "ETH<>EWC Bridge",
-                "body": "ETH<>EWC Bridge Explainer",
+                "body": "A user interface that allows users to bridge Energy Web Token to ERC20 tokens on the Ethereum mainnet, and to bridge ERC20 tokens on the Ethereum mainnet to Energy Web Token on the Energy Web Chain.",
                 "urls": {
                   "sources": [
                     "Read more: https://app.gitbook.com/o/-MaVNTC0phnhS2JhwPF0/s/-M_pXALj14Egb-5Bal_p/token/token-bridge"
