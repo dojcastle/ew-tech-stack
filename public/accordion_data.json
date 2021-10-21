@@ -313,10 +313,10 @@
           "sections": [
             {
               "title": "",
-              "subtitle": "DSB Messaging",
+              "subtitle": "Decentralised Service Bus",
               "content": {
-                "title": "DSB Messaging",
-                "body": "A pub/sub messaging service for high-volume, low latency (machine-to-machine) communications that is integrated with the Energy Web Chain.",
+                "title": "Decentralised Service Bus",
+                "body": "Provides functionality of legacy Enterprise Service Bus with the difference of being trust-less via decentralised method for governance, integrity, availability and scalability.",
                 "urls": {
                   "sources": [
                     "Read more: https://energy-web-foundation.gitbook.io/energy-web/technology/the-stack/utility-layer-1#decentralized-service-bus-dsb"
@@ -326,9 +326,9 @@
             },
             {
               "title": "",
-              "subtitle": "Cache Server for Blockchain data",
+              "subtitle": "Decentralised Cache API",
               "content": {
-                "title": "Cache Server for Blockchain data",
+                "title": "Decentralised Cache API",
                 "body": "A server that caches smart contract data in order to improve read-query performance for applications and packages that rely on data from the Energy Web Chain.",
                 "urls": {
                   "sources": [
@@ -352,17 +352,17 @@
             },
             {
               "title": "",
-              "subtitle": "Watchtower",
+              "subtitle": "Watchtower Ecosystem",
               "content": {
-                "title": "Watchtower",
-                "body": "a Watchtower is a software actor that observes and measures the level and quality of services that are provisioned by Energy Web software-as-a-service providers and managers."
+                "title": "Watchtower Ecosystem",
+                "body": "An ecosystem for group of decentralised agents that will observes and measures the level and quality of services that are provisioned by Energy Web software-as-a-service providers and managers."
               }
             },
             {
               "title": "",
-              "subtitle": "EWNS Name Service",
+              "subtitle": "Decentralised Name Service",
               "content": {
-                "title": "EWNS Name Service",
+                "title": "Decentralised Name Service",
                 "body": "A naming system for the Energy Web Chain ecosystem based on the Ethereum Name Service. It allows dApp users users to create human-readable, user-friendly names for blockchain identifiers and to reserve domain names for Energy Web applications.",
                 "urls": {
                   "sources": [
@@ -390,6 +390,14 @@
                     "Read more: https://app.gitbook.com/o/-MaVNTC0phnhS2JhwPF0/s/-M_pXALj14Egb-5Bal_p/token/token-bridge"
                   ]
                 }
+              }
+            },
+            {
+              "title": "",
+              "subtitle": "Decentralised Cluster Management",
+              "content": {
+                "title": "Decentralised Cluster Management",
+                "body": "Provides a production grade API interface for fast data retrieval from decentralised storages (i.e IPFS) and decentralised ledgers (i.e. EWC)"
               }
             }
           ]
