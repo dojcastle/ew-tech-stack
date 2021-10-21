@@ -360,9 +360,9 @@
             },
             {
               "title": "",
-              "subtitle": "Decentralised Name Service",
+              "subtitle": "Energy Web Name Service",
               "content": {
-                "title": "Decentralised Name Service",
+                "title": "Energy Web Name Service",
                 "body": "A naming system for the Energy Web Chain ecosystem based on the Ethereum Name Service. It allows dApp users users to create human-readable, user-friendly names for blockchain identifiers and to reserve domain names for Energy Web applications.",
                 "urls": {
                   "sources": [
