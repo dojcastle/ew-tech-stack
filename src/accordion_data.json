@@ -215,7 +215,7 @@
               "subtitle": "24/7",
               "content": {
                 "title": "24/7",
-                "body": "EW's 24/7 is an open-source software development kit (SDK) to track and match renewable electricity generation and consumption on a 24/7 level.\n This toolkit enables tracing energy consumption on a highly granular level (e.g., 30 minutes) as opposed to net/annual basis and ensuring it is covered or “matched” with clean energy sources to the fullest extent. Corporates like Google and Microsoft (i.e. those who achieved their net renewables targets and have massive electricity consumption in countries with competitive renewable energy markets) promote a 24/7 carbon-free energy strategy for several reasons. Matching energy consumption with carbon-free generation within the same granular time frame (e.g., an hour) as opposed to a year provides much more accurate information about the company’s carbon footprint from energy consumption. Based on this information, the company is able to make decisions that support their individual decarbonization, e.g., by shifting consumption to hours with highest shares of renewables in the grid. This information benefits the end-consumers as well, who receive a more detailed picture of these companies’ sustainability claims. Moreover, the demand for 24/7 clean energy motivates the supply by setting better price signals for renewable energy generation for when and where it’s needed the most.These more timely price signals should lead to better grid management and addition of new renewable energy capacity."
+                "body": "EW’s 24/7 is an open-source software development toolkit for tracking and matching renewable electricity generation and consumption at granular 30 minute and below intervals."
               }
             }
           ]
@@ -266,7 +266,7 @@
               "subtitle": "Switchboard",
               "content": {
                 "title": "Switchboard",
-                "body": "Switchboard is the identity and access management (IAM) interface for the Energy Web ecosystem. Its purpose is similar to centralized IAM services offered by Amazon or Google in that it allows you to define what users can do within and organization or an application.",
+                "body": "Switchboard is the identity and access management (IAM) interface for the Energy Web ecosystem. Its purpose is similar to centralized IAM services offered by Amazon or Google in that it allows you to define what users can do within an organization or application.",
                 "urls": {
                   "sources": [
                     "Read more: https://energy-web-foundation.gitbook.io/energy-web/foundational-concepts/self-sovereign-identity#decentralized-identifiers-dids"
@@ -363,7 +363,7 @@
               "subtitle": "EWNS Name Service",
               "content": {
                 "title": "EWNS Name Service",
-                "body": "A naming system for the Energy Web Chain ecosystem based on the Ethereum Name Service. It allows dapp users users to create human-readable, user-friendly names for blockchain identifiers and to reserve domain names for Energy Web applications.",
+                "body": "A naming system for the Energy Web Chain ecosystem based on the Ethereum Name Service. It allows dApp users users to create human-readable, user-friendly names for blockchain identifiers and to reserve domain names for Energy Web applications.",
                 "urls": {
                   "sources": [
                     "Read more: https://energy-web-foundation.gitbook.io/energy-web/how-tos-and-tutorials/using-the-ethereum-name-service-ens"
