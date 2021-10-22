@@ -439,14 +439,14 @@
             },
             {
               "title": "",
-              "subtitle": "ENERGY WEB TOKEN (EWT)",
+              "subtitle": "Energy Web Token (EWT)",
               "color": "#ffffff",
               "background": "#A466FF",
               "selected": {
                 "color": "#A466FF"
               },
               "content": {
-                "title": "ENERGY WEB TOKEN (EWT)",
+                "title": "Energy Web Token (EWT)",
                 "body": "Energy Web Tokens are the native utility token of the Energy Web Chain. They are used to pay for services on EW-DOS.",
                 "urls": {
                   "sources": [
