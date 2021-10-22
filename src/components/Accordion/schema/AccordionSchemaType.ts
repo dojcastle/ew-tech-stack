@@ -10,7 +10,7 @@ export interface AccordionContent {
   variant: "simple" | "advanced";
 }
 
-interface AccordionSection {
+export interface AccordionSection {
   title: string;
   subtitle?: string;
   color: string;

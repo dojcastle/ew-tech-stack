@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  /* max-width: 1400px; */
+  max-width: 1400px;
 }
 
 #nested-accordion * {
@@ -30,19 +30,20 @@ body {
     padding: 10px 0;
     overflow: auto;
   }
-  #nested-accordion .detail-card-container #detail-card {
+  #nested-accordion .detail-card-container .detail-card {
     width: 80% !important;
     margin: auto 0;
     top: 0 !important;
   }
 }
 
-#nested-accordion #detail-card {
-  font-family: "DW Sans", sans-serif !important;
+#nested-accordion .detail-card {
+  font-family: "DW Sans", sans-serif;
   position: relative;
   top: 10px;
   width: 305px;
   min-width: 305px;
+  margin: 0 auto;
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -51,34 +52,41 @@ body {
 }
 
 @media screen and (min-width: 1015px) {
-  #nested-accordion #detail-card {
+  #nested-accordion .detail-card {
     right: 14px;
   }
 }
 
-#nested-accordion #detail-card:not(.has-case-study) {
+#nested-accordion .detail-card:not(.has-case-study) {
   padding-bottom: 24px;
 }
 
-#nested-accordion #detail-card h1,
-#nested-accordion #detail-card .body {
+#nested-accordion .detail-card h1,
+#nested-accordion .detail-card .body {
   padding: 0 24px;
   padding-bottom: 24px;
 }
 
-#nested-accordion #detail-card .body {
+#nested-accordion .detail-card .body {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 143%;
   color: #2b2b2b;
-  max-height: 30vh;
   overflow: auto;
   margin-bottom: 24px;
   padding-bottom: 0;
 }
 
-#nested-accordion #detail-card h1 {
+@media screen and (min-width: 1015px) {
+  #nested-accordion .detail-card .body {
+    max-height: 30vh;
+  }
+}
+
+#nested-accordion .detail-card h1 {
+  display: flex;
+  justify-content: space-between;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -89,7 +97,7 @@ body {
   padding-top: 24px !important;
 }
 
-#nested-accordion #detail-card h1 .close-btn {
+#nested-accordion .detail-card h1 .close-btn {
   float: right;
   font-size: 24px;
   cursor: pointer;
@@ -107,21 +115,25 @@ body {
           justify-content: center;
   width: 30px;
   height: 30px;
+
+  position: relative;
+  top: -6px
+;
 }
 
 @media screen and (min-width: 1015px) {
-  #nested-accordion #detail-card h1 > .close-btn {
+  #nested-accordion .detail-card h1 > .close-btn {
     display: none;
   }
 }
 
-#nested-accordion #detail-card .urls a,
-#nested-accordion #detail-card .read-case-study {
+#nested-accordion .detail-card .urls a,
+#nested-accordion .detail-card .read-case-study {
   text-transform: capitalize;
 }
 
-#nested-accordion #detail-card .urls a::before,
-#nested-accordion #detail-card .read-case-study::before {
+#nested-accordion .detail-card .urls a::before,
+#nested-accordion .detail-card .read-case-study::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -131,7 +143,7 @@ body {
   top: 37%;
 }
 
-#nested-accordion #detail-card .urls {
+#nested-accordion .detail-card .urls {
   margin: 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +158,7 @@ body {
   gap: 8px;
 }
 
-#nested-accordion #detail-card .urls a {
+#nested-accordion .detail-card .urls a {
   position: relative;
   font-style: normal;
   font-weight: normal;
@@ -160,20 +172,20 @@ body {
   padding: 8px 16px;
 }
 
-#nested-accordion #detail-card .urls a::before {
+#nested-accordion .detail-card .urls a::before {
   right: 24px;
 }
 
-#nested-accordion #detail-card .urls a:hover {
+#nested-accordion .detail-card .urls a:hover {
   color: #ffffff;
   background: #a466ff;
 }
 
-#nested-accordion #detail-card .urls a:hover::before {
+#nested-accordion .detail-card .urls a:hover::before {
   background: url("/svg/icon-arrow-hover.svg") no-repeat center;
 }
 
-#nested-accordion #detail-card .read-case-study {
+#nested-accordion .detail-card .read-case-study {
   margin-top: 24px;
   display: block;
   width: 100%;
@@ -191,7 +203,7 @@ body {
   position: relative;
 }
 
-#nested-accordion #detail-card .read-case-study::after {
+#nested-accordion .detail-card .read-case-study::after {
   content: "";
   position: absolute;
   right: 37px;
@@ -203,18 +215,18 @@ body {
   background-size: cover;
 }
 
-#nested-accordion #detail-card .read-case-study::before {
+#nested-accordion .detail-card .read-case-study::before {
   top: 32%;
   right: 120px;
 }
 
-#nested-accordion #detail-card .read-case-study:hover {
+#nested-accordion .detail-card .read-case-study:hover {
   color: #ffffff;
   background: #a466ff url("/svg/dots-hover.svg") no-repeat bottom center;
   background-size: cover;
 }
 
-#nested-accordion #detail-card .read-case-study:hover::before {
+#nested-accordion .detail-card .read-case-study:hover::before {
   background: url("/svg/icon-arrow-hover.svg") no-repeat center;
 }
 
@@ -251,8 +263,8 @@ body {
 }
 
 #nested-accordion .accordion {
-  font-family: "DW Sans", sans-serif !important;
-  margin: 10px;
+  font-family: "DW Sans", sans-serif;
+  margin: 6px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -464,7 +476,7 @@ body {
 }
 
 #nested-accordion .category-items .item:not(.selected) {
-  border: none !important;
+  border: 3px solid transparent !important;
 }
 
 #nested-accordion .category-items .item:not(.filler):hover {
@@ -476,6 +488,78 @@ body {
   -webkit-box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
   background: #fff !important;
+}
+
+.card-carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden auto;
+}
+
+.card-carousel .swiper-container {
+  height: inherit;
+}
+
+.card-carousel .swiper-slide {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.card-carousel .swiper-slide .detail-card {
+  top: 0px !important;
+  width: 80% !important;
+}
+
+.card-carousel .swiper-slide-prev {
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.card-carousel .swiper-slide-next {
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+@media screen and (max-width: 362px) {
+  .card-carousel .swiper-slide-prev {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .card-carousel .swiper-slide-next {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 @media screen and (max-width: 1260px) and (min-width: 992px) {

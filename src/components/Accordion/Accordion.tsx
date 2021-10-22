@@ -4,7 +4,7 @@ import Icon from "../Icon";
 
 interface AccordionProps {
   children?: React.ReactNode;
-  title: string;
+  title?: string;
   variant?: "row" | "column";
   color?: string;
   arrow?: boolean;
