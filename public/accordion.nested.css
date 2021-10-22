@@ -40,7 +40,7 @@ body {
 #nested-accordion #detail-card {
   font-family: "DW Sans", sans-serif !important;
   position: relative;
-  top: 30px;
+  top: 10px;
   width: 305px;
   min-width: 305px;
   background: #ffffff;

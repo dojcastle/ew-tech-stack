@@ -138,7 +138,7 @@
               }
             },
             {
-              "title": "VW",
+              "title": "Volkswagen",
               "subtitle": "Smart Green Charging",
               "content": {
                 "title": "Smart Green Charging",
@@ -406,7 +406,7 @@
     },
     {
       "title": "Trust Layer",
-      "open": false,
+      "open": true,
       "content": [
         {
           "title": "Energy Web Chain & Tools",
