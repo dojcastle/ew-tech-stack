@@ -15,6 +15,7 @@ interface AccordionProps {
   background?: string;
   "data-section"?: string;
   disabled?: boolean;
+  expandable?: boolean;
 }
 
 export default function Accordion(props: AccordionProps) {
@@ -25,6 +26,7 @@ export default function Accordion(props: AccordionProps) {
     fullWidth = false,
     style = {},
     disabled = false,
+    expandable = true,
     background,
     color,
     title,
@@ -61,15 +63,19 @@ export default function Accordion(props: AccordionProps) {
       {...(props["data-section"]
         ? { "data-section": props["data-section"] }
         : {})}
-      className={[
-        "accordion",
-        parent ? "parent" : "",
-        color ? "themed" : "",
-        !open ? "is-closed" : "is-open",
-        fullWidth ? "full-width" : "",
-      ]
-        .join(" ")
-        .trim()}
+      className={
+        expandable
+          ? [
+              "accordion",
+              parent ? "parent" : "",
+              color ? "themed" : "",
+              !open ? "is-closed" : "is-open",
+              fullWidth ? "full-width" : "",
+            ]
+              .join(" ")
+              .trim()
+          : "accordion pseudo"
+      }
       style={{
         background: background ? background : color + "1a",
         color,
@@ -81,20 +87,22 @@ export default function Accordion(props: AccordionProps) {
           : {}),
       }}
     >
-      <div
-        className="title"
-        onClick={disabled ? () => {} : toggleContent}
-        style={
-          disabled
-            ? {
-                cursor: "initial",
-              }
-            : {}
-        }
-      >
-        <b style={{ color }}>{title}</b>
-        {!disabled && arrow && <Icon icon={<ArrowIcon />} />}
-      </div>
+      {expandable && (
+        <div
+          className="title"
+          onClick={disabled ? () => {} : toggleContent}
+          style={
+            disabled
+              ? {
+                  cursor: "initial",
+                }
+              : {}
+          }
+        >
+          <b style={{ color }}>{title}</b>
+          {!disabled && arrow && <Icon icon={<ArrowIcon />} />}
+        </div>
+      )}
       <div className="content">{children}</div>
     </div>
   );

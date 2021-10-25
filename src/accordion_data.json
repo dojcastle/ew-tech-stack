@@ -417,7 +417,7 @@
           "background": "#d2b3ff",
           "columns": 4,
           "open": true,
-          "expandable": true,
+          "expandable": false,
           "sections": [
             {
               "title": "",
@@ -441,7 +441,7 @@
               "title": "",
               "subtitle": "Energy Web Token (EWT)",
               "color": "#ffffff",
-              "background": "#A466FF",
+              "background": "#D1B2FF",
               "selected": {
                 "color": "#A466FF"
               },
@@ -459,7 +459,7 @@
               "title": "",
               "subtitle": "Validator Nodes",
               "color": "#ffffff",
-              "background": "#A466FF",
+              "background": "#D1B2FF",
               "selected": {
                 "color": "#A466FF"
               },
@@ -477,7 +477,7 @@
               "title": "",
               "subtitle": "Block Explorer",
               "color": "#ffffff",
-              "background": "#A466FF",
+              "background": "#D1B2FF",
               "selected": {
                 "color": "#A466FF"
               },

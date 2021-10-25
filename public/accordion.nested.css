@@ -115,10 +115,8 @@ body {
           justify-content: center;
   width: 30px;
   height: 30px;
-
   position: relative;
-  top: -6px
-;
+  top: -6px;
 }
 
 @media screen and (min-width: 1015px) {
@@ -277,7 +275,9 @@ body {
 
 #nested-accordion .accordion.parent {
   min-height: 80px;
-  border: 1px solid #bdbdbd;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.07), 0px 4.23704px 6.37037px rgba(0, 0, 0, 0.0425185), 0px 0.8963px 1.62963px rgba(0, 0, 0, 0.0274815);
+          box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.07), 0px 4.23704px 6.37037px rgba(0, 0, 0, 0.0425185), 0px 0.8963px 1.62963px rgba(0, 0, 0, 0.0274815);
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
@@ -286,12 +286,25 @@ body {
 }
 
 #nested-accordion .accordion.parent .content {
+  padding-top: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #nested-accordion .accordion.parent .title {
   width: 100%;
+}
+
+#nested-accordion .accordion.parent:not(.themed) > .title {
+  padding: 16px 16px 0 16px;
+  height: 49px;
+  margin-bottom: 16px;
+}
+
+#nested-accordion .accordion.parent:not(.themed).is-closed > .title {
+  padding: 16px 16px 0 16px;
+  height: 68px;
+  margin-bottom: 0;
 }
 
 #nested-accordion .accordion.is-open.themed > .title {
@@ -359,7 +372,6 @@ body {
 }
 
 #nested-accordion .accordion:not(.themed) .title {
-  border-bottom: 1px solid #bdbdbd;
   border-radius: 10px 10px 0 0;
   background: #ffffff;
 }
@@ -490,6 +502,18 @@ body {
   background: #fff !important;
 }
 
+.pseudo.accordion {
+  overflow: visible !important;
+}
+
+.pseudo.accordion .content {
+  padding: 0 !important;
+}
+
+.pseudo.accordion .category-items {
+  margin: 0;
+}
+
 .card-carousel {
   position: fixed;
   top: 0;
@@ -535,31 +559,21 @@ body {
 .card-carousel .swiper-slide .detail-card {
   top: 0px !important;
   width: 80% !important;
+  min-width: auto !important;
 }
 
 .card-carousel .swiper-slide-prev {
   -webkit-transform: translateX(15%);
           transform: translateX(15%);
-  opacity: 0.6;
+  opacity: 0.78;
   z-index: 0;
 }
 
 .card-carousel .swiper-slide-next {
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
-  opacity: 0.6;
+  opacity: 0.78;
   z-index: 0;
-}
-
-@media screen and (max-width: 362px) {
-  .card-carousel .swiper-slide-prev {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  .card-carousel .swiper-slide-next {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
 }
 
 @media screen and (max-width: 1260px) and (min-width: 992px) {

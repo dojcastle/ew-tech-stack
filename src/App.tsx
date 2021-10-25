@@ -98,11 +98,12 @@ function App() {
                     flex: subAccordion.columns || 1,
                   },
                   "data-section": accordion.title,
+                  expandable: subAccordion.expandable,
                 }
-              : { key: index };
+              : { key: index, expandable: subAccordion.expandable };
 
             return React.createElement(
-              subAccordion.expandable ? Accordion : React.Fragment,
+              Accordion,
               props,
               subAccordion.sections && (
                 <ul
@@ -194,7 +195,15 @@ function App() {
     <SidebarxModalProvider.Provider value={{ current, setCurrent }}>
       <div className="wrapper">
         {error && <b>{error}</b>}
-        <div>{data && !error && NestedAccordion(0)}</div>
+        <div style={{ width: "100%" }}>
+          {data && !error && (
+            <>
+              <div>{NestedAccordion(0, false)}</div>
+              <div>{NestedAccordion(1, false)}</div>
+              <div>{NestedAccordion(2, false)}</div>
+            </>
+          )}
+        </div>
         {screenSize === "lg" && <DetailCard data={detailCardData} />}
         {screenSize !== "lg" && <Carousel data={data} />}
       </div>
