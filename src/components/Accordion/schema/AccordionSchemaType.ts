@@ -13,6 +13,7 @@ export interface AccordionContent {
 export interface AccordionSection {
   title: string;
   subtitle?: string;
+  style?: React.CSSProperties;
   color: string;
   background?: string;
   sectionColor?: string;

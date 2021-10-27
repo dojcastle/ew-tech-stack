@@ -7,7 +7,7 @@ import {
   AccordionContent,
   AccordionType,
 } from "./Accordion/schema/AccordionSchemaType";
-import { Card } from "./SidebarxModal/DetailCard";
+import { Card, fixCardsHeight } from "./SidebarxModal/DetailCard";
 import SidebarxModalProvider from "./SidebarxModal/SidebarxModalProvider";
 
 interface CarouselProps {
@@ -19,7 +19,17 @@ export default function Carousel(props: CarouselProps) {
   const swiperRef = useRef<any>();
   const context = useContext(SidebarxModalProvider);
 
-  const Cards = function (): ReactChild[] {
+  const onClose = () => {
+    context?.setCurrent(undefined);
+    setTimeout(() => {
+      document.querySelectorAll(".item.selected").forEach((el) => {
+        el.classList.remove("selected");
+      });
+      updatedSelectedItem();
+    }, 0);
+  };
+
+  const getCardContents = function (): AccordionContent[] | [] {
     if (data) {
       const cardData = [] as AccordionContent[];
       data.forEach((section) =>
@@ -29,6 +39,34 @@ export default function Carousel(props: CarouselProps) {
           })
         )
       );
+      return cardData;
+    }
+    return [];
+  };
+
+  const updateArrows = () => {
+    const cardData = getCardContents();
+
+    if (cardData) {
+      const leftArrow = document.querySelector(".arrow-left") as HTMLElement;
+      const rightArrow = document.querySelector(".arrow-right") as HTMLElement;
+      if (leftArrow && swiperRef.current.activeIndex === 0) {
+        leftArrow.style.opacity = "0";
+      } else {
+        leftArrow.style.opacity = "1";
+      }
+      if (rightArrow && swiperRef.current.activeIndex === cardData.length - 1) {
+        rightArrow.style.opacity = "0";
+      } else {
+        rightArrow.style.opacity = "1";
+      }
+    }
+  };
+
+  const Cards = function (): ReactChild[] {
+    if (data) {
+      const cardData = getCardContents();
+
       return cardData.map((content) => {
         const {
           title,
@@ -41,7 +79,14 @@ export default function Carousel(props: CarouselProps) {
           .find((q) => q.toLowerCase().indexOf("read more") >= 0)
           ?.replace("Read more:", "");
         return (
-          <SwiperSlide key={title}>
+          <SwiperSlide
+            key={title}
+            onClick={(e) => {
+              if (e.currentTarget === e.target) {
+                onClose();
+              }
+            }}
+          >
             <Card
               sources={sources}
               variant={variant}
@@ -51,15 +96,7 @@ export default function Carousel(props: CarouselProps) {
               title={title}
               setCurrent={() => {}}
               data={content}
-              onClose={() => {
-                context?.setCurrent(undefined);
-                setTimeout(() => {
-                  document.querySelectorAll(".item.selected").forEach((el) => {
-                    el.classList.remove("selected");
-                  });
-                  updatedSelectedItem();
-                }, 0);
-              }}
+              onClose={onClose}
             />
           </SwiperSlide>
         );
@@ -88,6 +125,11 @@ export default function Carousel(props: CarouselProps) {
     if (context?.setCurrent) {
       context.setCurrent(undefined);
     }
+    window.addEventListener("resize", fixCardsHeight, false);
+
+    return () => {
+      window.removeEventListener("resize", fixCardsHeight, false);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -95,12 +137,29 @@ export default function Carousel(props: CarouselProps) {
     <div className="card-carousel">
       {data?.length && (
         <Swiper
+          onSlideChange={() => {
+            fixCardsHeight();
+            updateArrows();
+          }}
           centeredSlides={true}
           slidesPerView={"auto"}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+            updateArrows();
           }}
         >
+          <span
+            className="arrow-left"
+            onClick={() => {
+              swiperRef.current.slidePrev();
+            }}
+          ></span>
+          <span
+            className="arrow-right"
+            onClick={() => {
+              swiperRef.current.slideNext();
+            }}
+          ></span>
           {Cards()}
         </Swiper>
       )}

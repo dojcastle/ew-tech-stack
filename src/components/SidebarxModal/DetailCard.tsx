@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect } from "react";
 import { updatedSelectedItem } from "../../App";
 import { AccordionContent } from "../Accordion/schema/AccordionSchemaType";
 import SidebarxModalProvider from "./SidebarxModalProvider";
@@ -6,6 +6,41 @@ import SidebarxModalProvider from "./SidebarxModalProvider";
 interface DetailCardProps {
   data: AccordionContent | undefined;
 }
+
+export const fixCardsHeight = () => {
+  document.querySelectorAll(".detail-card").forEach((card) => {
+    const c = card as HTMLElement;
+    const winHeight = window.innerHeight;
+    const hHeight = c.querySelector("h1")?.clientHeight || 0;
+    const fHeight = c.querySelector(".urls")?.clientHeight || 0;
+    const body = c.querySelector(".body") as HTMLElement;
+    if (window.getComputedStyle(body)["maxHeight"] === "none")
+      body.style.maxHeight = body.clientHeight + "px";
+
+    if (c.clientHeight > winHeight || body.scrollHeight > body.clientHeight) {
+      if (body) {
+        let newHeight = winHeight - hHeight - fHeight - 100;
+        if (newHeight < 200) {
+          newHeight = 200;
+        }
+        body.style.height = newHeight + "px";
+        if (c.clientHeight > winHeight) {
+          c.style.alignSelf = "flex-start";
+          c.style.margin = "10px auto";
+          if (c.parentElement) c.parentElement.style.overflow = "auto";
+        } else {
+          c.style.alignSelf = "center";
+          c.style.margin = "0 auto";
+          if (c.parentElement) c.parentElement.style.overflow = "initial";
+        }
+      }
+    } else {
+      c.style.alignSelf = "center";
+      c.style.margin = "0 auto";
+      if (c.parentElement) c.parentElement.style.overflow = "initial";
+    }
+  });
+};
 
 export function Card({
   variant,
@@ -28,30 +63,12 @@ export function Card({
   sources: string[];
   onClose?: Function;
 }) {
-  const cardRef = useRef<HTMLDivElement>(null);
-
-  const fixHeight = () => {
-    if (!cardRef.current) return;
-    const winHeight = window.innerHeight;
-    const c = cardRef.current;
-    if (c.clientHeight > winHeight) {
-      const hHeight = c.querySelector("h1")?.clientHeight || 0;
-      const fHeight = c.querySelector(".urls")?.clientHeight || 0;
-      const body = c.querySelector(".body") as HTMLElement;
-
-      if (body) {
-        body.style.height = winHeight - hHeight - fHeight - 100 + "px";
-      }
-    }
-  };
-
   useEffect(() => {
-    fixHeight();
+    fixCardsHeight();
   }, []);
 
   return (
     <div
-      ref={cardRef}
       className={["detail-card", variant, readCaseStudy ? "has-case-study" : ""]
         .join(" ")
         .trim()}

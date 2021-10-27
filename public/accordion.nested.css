@@ -3,6 +3,37 @@ body {
   max-width: 1400px;
 }
 
+.arrow-left,
+.arrow-right {
+  position: fixed;
+  top: calc((50%) - 25px);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: -webkit-transform 0.12s ease-out;
+  transition: -webkit-transform 0.12s ease-out;
+  transition: transform 0.12s ease-out;
+  transition: transform 0.12s ease-out, -webkit-transform 0.12s ease-out;
+}
+
+.arrow-left:active,
+.arrow-right:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.arrow-right {
+  right: 3px;
+  background: url("/svg/arrow-right.svg") no-repeat center;
+  background-size: auto 100%;
+}
+
+.arrow-left {
+  left: 3px;
+  background: url("/svg/arrow-left.svg") no-repeat center;
+  background-size: auto 100%;
+}
+
 #nested-accordion * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -40,7 +71,7 @@ body {
 #nested-accordion .detail-card {
   font-family: "DW Sans", sans-serif;
   position: relative;
-  top: 10px;
+  top: 30px;
   width: 305px;
   min-width: 305px;
   margin: 0 auto;
@@ -85,6 +116,7 @@ body {
 }
 
 #nested-accordion .detail-card h1 {
+  position: relative;
   display: flex;
   justify-content: space-between;
   font-style: normal;
@@ -92,9 +124,19 @@ body {
   font-size: 16px;
   line-height: 143%;
   color: #7907fe;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 24px !important;
   padding-top: 24px !important;
+  margin-bottom: 24px;
+}
+
+#nested-accordion .detail-card h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+  left: 24px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #nested-accordion .detail-card h1 .close-btn {
@@ -215,7 +257,7 @@ body {
 
 #nested-accordion .detail-card .read-case-study::before {
   top: 32%;
-  right: 120px;
+  left: 160px;
 }
 
 #nested-accordion .detail-card .read-case-study:hover {
@@ -520,7 +562,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,7 +600,7 @@ body {
 
 .card-carousel .swiper-slide .detail-card {
   top: 0px !important;
-  width: 80% !important;
+  width: 83% !important;
   min-width: auto !important;
 }
 

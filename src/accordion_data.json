@@ -268,9 +268,7 @@
                 "title": "Switchboard",
                 "body": "Switchboard is the identity and access management (IAM) interface for the Energy Web ecosystem. Its purpose is similar to centralized IAM services offered by Amazon or Google in that it allows you to define what users can do within an organization or application.",
                 "urls": {
-                  "sources": [
-                    "Read more: https://switchboard.energyweb.org/"
-                  ]
+                  "sources": ["Read more: https://switchboard.energyweb.org/"]
                 }
               }
             },
@@ -415,13 +413,17 @@
           "sectionColor": "#A466FF",
           "fullWidth": true,
           "background": "#d2b3ff",
-          "columns": 4,
+          "columns": 3,
           "open": true,
           "expandable": false,
           "sections": [
             {
               "title": "",
               "subtitle": "Energy Web Chain",
+              "style": {
+                "gridColumnStart": "span 3",
+                "order": "3"
+              },
               "background": "#A466FF",
               "color": "#FFFFFF",
               "selected": {
@@ -476,6 +478,7 @@
             {
               "title": "",
               "subtitle": "Block Explorer",
+
               "color": "#ffffff",
               "background": "#D1B2FF",
               "selected": {
