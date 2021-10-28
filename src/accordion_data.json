@@ -34,7 +34,7 @@
 
                     "article: https://medium.com/energy-web-insights/canary-in-the-sunshine-australia-is-showing-the-rest-of-the-world-what-a-modern-grid-looks-like-ce95832cc017"
                   ],
-                  "readCaseStudy": "https://www.energyweb.org/case-studies/aemo/"
+                  "readCaseStudy": "https://www.energyweb.org/case-studies/project-edge/"
                 }
               }
             },
@@ -85,8 +85,6 @@
                 "body": "EasyBat is an open-source solution for decentralized lifecycle battery asset management. The solution is built on the Energy Web Decentralized Operating System (EW-DOS) open-source technology stack and focuses on the entire battery lifecycle. Original equipment manufacturers (OEMs), distributors, installers, and accredited inspection and certification organizations issue and verify every relevant asset transaction. The fact that all these entities work together on a shared decentralized ecosystem is an important and never-seen-before innovation. Partners involve Bebat, the Belgian battery compliance scheme and Fluvius, the electricity and natural gas distribution system operator (DSO) for the Flemish Region of Belgium.",
                 "urls": {
                   "sources": [
-                    "EasyBat prototype: https://www.energyweb.org/technology/applications/ew-switchboard/easybat/",
-
                     "launch announcement: https://medium.com/energy-web-insights/bebat-launches-easybat-an-open-source-decentralized-solution-for-battery-lifecycle-management-281f2ace61e9"
                   ]
                 }
@@ -185,7 +183,7 @@
 
                     "announcement: https://medium.com/energy-web-insights/energy-web-awarded-good-energies-foundation-grant-for-new-global-renewables-marketplace-794eaa7e14e0"
                   ],
-                  "readCaseStudy": "https://www.energyweb.org/case-studies/project-edge/"
+                  "readCaseStudy": "https://www.energyweb.org/case-studies/zero/"
                 }
               }
             },
@@ -197,8 +195,6 @@
                 "body": "Origin offers customizable and mix-match modules to build digital tracking systems and marketplaces for renewable electricity certificates. \n\n EW Deployed several instances of Origin for different partners in different geographies, including:\n\n- PTT in Thailand:\nPTT and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Thailand, in line with the I-REC Standard.\n\n- Foton in Turkey:\nFoton and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Turkey in line with the I-REC Standard. The marketplace is up and running and accessible to renewable energy buyers and sellers.\n\n- PJM in 14 US States:\nPJM and EW cooperated in a year-long partnership to test blockchain-based tools (including the Origin SDK) for creating a digital marketplace for voluntary RECs.\n\n- NV Energy in Nevada, USA:\nEW, Blockchains LLC and the Public Utility Commission (PUC) of Nevada cooperated in testing blockchain-based technologies, including the Origin SDK and its issuer module, for creating a modern tracking system for Nevada's renewable energy certificates (\"PECs\").",
                 "urls": {
                   "sources": [
-                    "PTT announcement: https://energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/",
-
                     "PJM announcement: https://medium.com/energy-web-insights/pjm-eis-update-modernizing-a-legacy-u-s-rec-tracking-system-with-blockchain-based-technology-db0ad5a4f924",
 
                     "PJM EIS press release: https://insidelines.pjm.com/pjm-eis-completes-blockchain-pilot-with-energy-web-foundation",

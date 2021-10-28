@@ -34,7 +34,7 @@
 
                     "article: https://medium.com/energy-web-insights/canary-in-the-sunshine-australia-is-showing-the-rest-of-the-world-what-a-modern-grid-looks-like-ce95832cc017"
                   ],
-                  "readCaseStudy": "https://www.energyweb.org/case-studies/aemo/"
+                  "readCaseStudy": "https://www.energyweb.org/case-studies/project-edge/"
                 }
               }
             },
@@ -197,8 +197,6 @@
                 "body": "Origin is a production-ready digital marketplace for renewable energy certificates. \n\n EW Deployed several instances of Origin for different partners in different geographies, including:\n\n- PTT in Thailand:\nPTT and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Thailand, in line with the I-REC Standard.\n\n- Foton in Turkey:\nFoton and EW cooperated to build a production-ready digital marketplace for renewable energy certificates in Turkey in line with the I-REC Standard. The marketplace is up and running and accessible to renewable energy buyers and sellers.\n\n- PJM in 14 US States:\nPJM and EW cooperated in a year-long partnership to test blockchain-based tools (including the Origin SDK) for creating a digital marketplace for voluntary RECs.\n\n- NV Energy in Nevada, USA:\nEW, Blockchains LLC and the Public Utility Commission (PUC) of Nevada cooperated in testing blockchain-based technologies, including the Origin SDK and its issuer module, for creating a modern tracking system for Nevada's renewable energy certificates (\"PECs\").",
                 "urls": {
                   "sources": [
-                    "PTT announcement: https://energyweb.org/2019/09/11/ptt-and-energy-web-foundation-launch-blockchain-based-renewables-platform-for-thailand-asean-japan/",
-
                     "PJM announcement: https://medium.com/energy-web-insights/pjm-eis-update-modernizing-a-legacy-u-s-rec-tracking-system-with-blockchain-based-technology-db0ad5a4f924",
 
                     "PJM EIS press release: https://insidelines.pjm.com/pjm-eis-completes-blockchain-pilot-with-energy-web-foundation",
